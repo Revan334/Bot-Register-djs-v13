@@ -1,16 +1,16 @@
 const { MessageEmbed, Permissions } = require('discord.js');
-const { ID_CHANNEL, TAG, ID_ROLE, ID_ROLE_REMOVE } = require('../../util/config.json');
+const { 1015904994060406849, {user}, 1015904992739205188, ID_ROLE_REMOVE } = require('../../util/config.json');
 
 module.exports = {
   name: 'register',
   aliases: ['r'],
-  description: 'Ini Command register',
+  description: '!register',
   async execute(message, args, client) {
     const nickname = args.join(' ');
-    const channel = await `${ID_CHANNEL}`;
-    const role = await `${ID_ROLE}`;
+    const channel = await `${1015904994060406849}`;
+    const role = await `${1015904992739205188}`;
     const roleremove = `${ID_ROLE_REMOVE}`;
-    const tag = await `${TAG}`;
+    const tag = await `${user}`;
 
     if (message.channel.id != `${channel}`) {
       const embed2 = new MessageEmbed().setColor('RED').setTitle('❌ • Error').setDescription(`Kamu tidak bisa menggunakan command ini kecuali di <#${channel}>`);
