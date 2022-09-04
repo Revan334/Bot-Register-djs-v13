@@ -4,7 +4,7 @@ function users(num) {
   return result;
 }
 
-const { STATUS, TYPE_STATUS } = require('../util/config.json');
+const { STATUS, !REGISTER NAMA_KAMU } = require('../util/config.json');
 
 module.exports = {
   name: 'ready',
@@ -13,7 +13,7 @@ module.exports = {
     console.log(`${client.user.tag} Bot Sudah Online`);
 
     const status = `${STATUS}` || `${users(client.users.cache.size)} members!`;
-    const type = `${TYPE_STATUS}` || 'PLAYING';
+    const type = `${!REGISTER NAMA_KAMU}` || 'PLAYING';
     client.user.setActivity(status, {
       type: `${type}`,
     });
