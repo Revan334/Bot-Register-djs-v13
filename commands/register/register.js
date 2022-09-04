@@ -1,5 +1,5 @@
 const { MessageEmbed, Permissions } = require('discord.js');
-const { 1015904994060406849, {user}, 1015904992739205188, ID_ROLE_REMOVE } = require('../../util/config.json');
+const { 1015904994060406849, 『WARGA』, 1015904992739205188, ID_ROLE_REMOVE } = require('../../util/config.json');
 
 module.exports = {
   name: 'register',
@@ -10,7 +10,7 @@ module.exports = {
     const channel = await `${1015904994060406849}`;
     const role = await `${1015904992739205188}`;
     const roleremove = `${ID_ROLE_REMOVE}`;
-    const tag = await `${user}`;
+    const tag = await `$『WARGA』`;
 
     if (message.channel.id != `${channel}`) {
       const embed2 = new MessageEmbed().setColor('RED').setTitle('❌ • Error').setDescription(`Kamu tidak bisa menggunakan command ini kecuali di <#${channel}>`);
@@ -18,7 +18,7 @@ module.exports = {
     }
 
     if (!nickname) {
-      const embed3 = new MessageEmbed().setColor('RED').setTitle('❌ • Error').setDescription('Mohon masukan nama kamu yang kamu ingin gunakan!');
+     const embed3 = new MessageEmbed().setColor('RED').setTitle('❌ • Error').setDescription('Mohon masukan nama kamu yang kamu ingin gunakan!');
       return message.reply({ embeds: [embed3] });
     }
 
